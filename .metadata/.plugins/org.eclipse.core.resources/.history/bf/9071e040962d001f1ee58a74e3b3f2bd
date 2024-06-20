@@ -1,0 +1,71 @@
+package TestNGproject;
+
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Deleteemployee {public String baseurl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+public WebDriver Driver;
+
+
+@BeforeTest
+public void setup()
+{
+System.out.println("Before Test Executed");
+Driver=new ChromeDriver();
+//Maximize Window
+Driver.manage().window().maximize();
+//Open URL
+Driver.get(baseurl);
+//Timer
+Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+}
+@Test
+public void Login() throws IOException, InterruptedException
+{   
+	//Find username and enter username "Admin"
+	Driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
+	
+	//Find password and enter password admin123
+	Driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
+	
+	//login button click
+	Driver.findElement(By.xpath("//button[@type='submit']")).submit();
+	
+	//Find PIM Menu and click on PIM Menu
+	Driver.findElement(By.xpath("//span[text()='PIM']")).click();
+	
+	//Select Employee List
+	Driver.findElement(By.xpath("//a[text()='Employee List']")).click();
+	
+	//Enter employee name
+	Driver.findElements(By.tagName("input")).get(1).sendKeys("dhore");
+	
+	//Click the search button.
+	Driver.findElement(By.xpath("//button[normalize-space()='Search']")).click();
+	
+	//click on delete icon of the record
+	Driver.findElement(By.xpath("//i[@class='oxd-icon bi-trash']")).click();
+	
+	Driver.findElement(By.xpath("//button[normalize-space()='Yes, Delete']")).click();
+	
+	String msg = Driver.findElement(By.xpath("(//span[normalize-space()='No Records Found'][1]")).getText();
+	Assert.assertEquals(msg, "No Records Found");
+	
+}
+@AfterTest
+public void teardown() throws InterruptedException
+{
+	Thread.sleep(3000);
+	Driver.close();
+	Driver.quit();
+	
+}
+}

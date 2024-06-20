@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-20T19:20:27 IST" name="Default suite" finished-at="2024-06-20T19:21:59 IST" duration-ms="92065">
+    <groups>
+    </groups>
+    <test started-at="2024-06-20T19:20:27 IST" name="Default test" finished-at="2024-06-20T19:21:59 IST" duration-ms="92065">
+      <class name="TestNGproject.HRMTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:20:27 IST" name="setup" finished-at="2024-06-20T19:20:39 IST" duration-ms="12084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginInvalid()[pri:1, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:20:40 IST" name="loginInvalid" finished-at="2024-06-20T19:20:42 IST" duration-ms="2055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method signature="LoginPage()[pri:2, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:20:42 IST" name="LoginPage" finished-at="2024-06-20T19:20:43 IST" duration-ms="1223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method signature="AddEmployee()[pri:3, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:20:43 IST" name="AddEmployee" finished-at="2024-06-20T19:21:04 IST" duration-ms="21227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddEmployee -->
+        <test-method signature="searchEmployee()[pri:4, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:21:04 IST" name="searchEmployee" finished-at="2024-06-20T19:21:08 IST" duration-ms="3819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEmployee -->
+        <test-method signature="Fileupload()[pri:5, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:21:08 IST" name="Fileupload" finished-at="2024-06-20T19:21:15 IST" duration-ms="6733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fileupload -->
+        <test-method signature="Printemployeelist()[pri:6, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:21:15 IST" name="Printemployeelist" finished-at="2024-06-20T19:21:34 IST" duration-ms="19643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Printemployeelist -->
+        <test-method signature="ApplyLeave()[pri:7, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:21:34 IST" name="ApplyLeave" finished-at="2024-06-20T19:21:43 IST" duration-ms="9212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyLeave -->
+        <test-method signature="Deleteemployee()[pri:8, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:21:43 IST" name="Deleteemployee" finished-at="2024-06-20T19:21:56 IST" duration-ms="12507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteemployee -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:TestNGproject.HRMTest@173ed316]" started-at="2024-06-20T19:21:56 IST" name="Logout" finished-at="2024-06-20T19:21:59 IST" duration-ms="3461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- TestNGproject.HRMTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
